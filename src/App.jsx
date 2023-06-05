@@ -1,15 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
-import {LoadingScreen} from './Components/Loading';
-import {StartButton} from './Components/StartButton';
-import {MainScreen} from './Components/MainScreen';
+import  Start from './components/StartButton';
+import Loading from './Components/Loading';
 
 function App() {
   return (
-    <BrowserRouter>
-<LoadingScreen />
-<StartButton />
-<MainScreen />
-    </BrowserRouter>
+   <BrowserRouter>
+   <Loading />
+   </BrowserRouter>
   )
 }
 
