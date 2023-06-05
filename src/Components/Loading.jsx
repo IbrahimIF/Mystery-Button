@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import 'tailwindcss/tailwind.css';
 
-function Loading() {
+const LoadingScreen = () => {
+  const [timer, setTimer] = useState(5);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer((prevTimer) => prevTimer - 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (timer === 0) {
+      // Redirect to the next page after 5 seconds
+      navigate.push('/MainScreen');
+    }
+  }, [timer, navigate]);
+
   return (
-    <div className="flex justify-center items-center h-screen bg-blue-300">
-      <div className="pl">
-        {[...Array(12)].map((_, index) => (
+    <div className="flex items-center justify-center h-screen">
+      <div className="bg-blue-500 text-white py-4 px-6 rounded-lg shadow-lg">
+        <h1 className="text-2xl">Loading...</h1>
+        <p className="text-xl">Redirecting in {timer} seconds</p>
+        <div className="h-4 bg-white mt-4 rounded-full overflow-hidden">
           <div
-            key={index}
-            className="pl__dot animate-pulse"
-            style={{
-              animationDelay: `${index * 0.2}s`,
-              zIndex: index < 5 ? 5 - index : index - 4,
-            }}
-          />
-        ))}
-        <div className="pl__text">Loading...</div>
+            className="h-full bg-blue-700 animate-loading-bar"
+            style={{ width: `${(5 - timer) * 20}%` }}
+          ></div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Loading;
+export default LoadingScreen;
