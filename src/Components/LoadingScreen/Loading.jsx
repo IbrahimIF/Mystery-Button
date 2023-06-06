@@ -20,12 +20,23 @@ function LoadingScreen(){
   
   return (
     <>
+    <div className="container">
      <div className="pl">
-      {[...Array(12)].map((_, index) => (
-        <div key={index} className="pl__dot"></div>
-      ))}
-      <div className="pl__text">Loading...</div>
-    </div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__text">Loading…</div>
+</div>
+</div>
     </>
   );
   }

@@ -143,7 +143,7 @@ function RandomScreen() {
   useEffect(() => {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
-        navigate("/");
+        navigate("/Start");
         
       }, timeoutDuration);
 
