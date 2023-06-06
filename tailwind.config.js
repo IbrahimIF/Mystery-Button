@@ -2,7 +2,7 @@
 export default {
   content: [],
   purge: [],
-  darkMode: false,
+  darkMode: true,
   theme: {
     extend: {},
   },
