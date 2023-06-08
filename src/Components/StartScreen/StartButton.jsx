@@ -8,9 +8,11 @@ import'./StartScreen.css';
 function StartButton() {
 return(
   <>
+  <div className='place-content-center'>
 <AwesomeButton  type="secondary" href='/Main'>Start</AwesomeButton>
 <span>Welcome</span>
-<span>Find all 10 buttons to finnish the game</span>
+<span className=''>Find all 10 buttons to finnish the game</span>
+  </div>
   </>
 );
 }

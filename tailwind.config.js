@@ -4,7 +4,9 @@ export default {
   purge: [],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      colors: {'regal-blue': '#243c5a'},
+    },
   },
   variants: {
     extend: {},

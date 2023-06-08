@@ -4,9 +4,10 @@ function MainScreen() {
 
 
   return (
-    <>
-      <button></button>
-    </>
+    <div>
+      <button><p className="text-sky-400/100">press</p></button>
+      <p className="text-white">press</p>
+    </div>
   );
 }
 
