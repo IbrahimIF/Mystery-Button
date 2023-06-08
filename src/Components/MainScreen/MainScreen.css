@@ -1,0 +1,40 @@
+body{
+  background-color:#ededed;
+  margin:0;
+}
+button{
+  background-color:#b11b1b;
+  position:relative;
+  width:100px;
+  height:60px;
+  -webkit-transition:top 0.3s ease;
+  transition:all 0.3s ease;
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 50px);
+  top:calc(50vh - 30px);
+  box-shadow:inset -2px -2px 0 1px rgb(136, 8, 8);
+}
+button:before{
+  z-index:-9;
+  content: "press";
+  position:fixed;
+  width:100px;
+  height:60px;
+  background: rgb(85, 85, 85);
+background: linear-gradient(to right, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(88, 88, 88) 58%, rgbargb(172, 172, 172), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgba(105,150,156,1) 72%, rgba(105,150,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#012e34', endColorstr='#69969c', GradientType=1 );
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 50px);
+  top:calc(50vh - 20px);
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  box-shadow:1px 4px 10px rgb(81, 81, 81);
+}
+button:active{
+  top:calc(50vh - 30px + 10px);
+}
+button:focus{
+  outline:none; 
+}
