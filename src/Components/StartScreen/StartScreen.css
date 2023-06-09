@@ -13,31 +13,46 @@
     --button-secondary-border: 3px solid #787878;
     }
 
-.container{
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    left: calc(50% - 100px);
-    top: calc(50vh - 100px);
-}
+    .container {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        left: calc(50% - 100px);
+        top: calc(50vh - 100px);
+      }
+      
+      .start-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        transition: opacity 0.3s;
+      }
+      
+      .start-container:hover {
+        opacity: 0.8;
+      }
+      
+      .textContainer {
+        margin-top: 20px;
+text-align: center;
+      }
+      
+      .title {
+        font-weight: bold;
+        text-decoration: underline;
+        color: black;
 
-
-
-.text1 {
-    position: absolute;
-    padding-top: 330px;
-padding-left: 400px;
-    color: black;
-    text-transform: uppercase;
-}
-
-.text2{
-    position: absolute;
-    padding-top: 400px;
-    padding-left: 250px;
-    color: black;
-    text-transform: uppercase;
-
-}
+      }
+      
+      .text {
+        top: 100px;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
