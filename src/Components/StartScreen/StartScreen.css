@@ -2,7 +2,7 @@
     --button-default-height: 64px;
     --button-default-font-size: 18px;
     --button-default-border-radius: 8px;
-    --button-horizontal-padding: 50px;
+    --button-horizontal-padding: 100px;
     --button-raise-level: 7px;
     --button-hover-pressure: 4;
     --transform-speed: 0.275s;
@@ -13,3 +13,31 @@
     --button-secondary-border: 3px solid #787878;
     }
 
+.container{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 100px);
+    top: calc(50vh - 100px);
+}
+
+
+
+.text1 {
+    position: absolute;
+    padding-top: 330px;
+padding-left: 400px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.text2{
+    position: absolute;
+    padding-top: 400px;
+    padding-left: 250px;
+    color: black;
+    text-transform: uppercase;
+
+}

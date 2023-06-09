@@ -12,7 +12,7 @@ function LoadingScreen(){
     } else {
       const timer = setTimeout(() => {
         setTimeoutDuration(timeoutDuration - 1);
-      }, 1000);
+      }, 1500);
 
       return () => clearTimeout(timer);
     }
@@ -20,7 +20,7 @@ function LoadingScreen(){
   
   return (
     <>
-    <div className="container">
+    <div className="place-content-center">
      <div className="pl">
 	<div className="pl__dot"></div>
 	<div className="pl__dot"></div>
@@ -34,7 +34,7 @@ function LoadingScreen(){
 	<div className="pl__dot"></div>
 	<div className="pl__dot"></div>
 	<div className="pl__dot"></div>
-	<div className="pl__text">Loading…</div>
+	<div className="pl__text"><b>Loading...</b></div>
 </div>
 </div>
     </>
