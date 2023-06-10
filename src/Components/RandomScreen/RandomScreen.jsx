@@ -54,7 +54,6 @@ function RandomScreen() {
               { type: 'short', url: 'https://www.youtube.com/embed/6eA4YXjOEnQ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'short', url: '?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
-              { type: 'horror', url: 'https://i.postimg.cc/XNFqJFZP/horror-image.png' },
               // Add more images and YouTube links to the list
       ];
 
@@ -87,13 +86,6 @@ function RandomScreen() {
         return (
           <div>
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
-          </div>
-        );
-      }else if (media.type === 'horror') {
-        setTimeoutDuration(3000); // Set the timeout to 15 seconds
-        return (
-          <div className="horror">
-            <img width="600" height="355" src={media.url} alt="horror" />
           </div>
         );
       } else if (media.type === 'video') {
@@ -143,7 +135,7 @@ function RandomScreen() {
   useEffect(() => {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
-        navigate("/Start");
+        navigate("/Main");
         
       }, timeoutDuration);
 

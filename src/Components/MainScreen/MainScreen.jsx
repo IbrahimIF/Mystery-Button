@@ -5,8 +5,8 @@ function MainScreen() {
 
   return (
     <div>
-      <button><p className="text-sky-400/100">press</p></button>
-      <p className="text-white">press</p>
+      <div className="base"></div>
+      <button><p className="text">press</p></button>
     </div>
   );
 }
