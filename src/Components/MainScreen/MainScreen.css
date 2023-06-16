@@ -7,17 +7,24 @@
   transition: all 0.3s ease;
   border-radius: 50%;
   border: none;
-  left: 50%; /* Adjusted value to center horizontally within the button container */
-  top: 50%; /* Adjusted value to center vertically within the button container */
+  left:calc(50% - 0px); /* Adjusted value to center horizontally within the button container */
+  top:calc(50% - 100px); /* Adjusted value to center vertically within the button container */
   transform: translate(-50%, -50%); /* Add this line to center the button precisely */
   box-shadow: inset -2px -2px 0 1px rgb(136, 8, 8);
 }
+.button:active {
+  top: calc(50% + -85px); /* Adjusted value for vertical position on button press */
+}
 
-.button:before {
+.button:focus {
+  outline: none;
+}
+
+.buttonBellow{
   z-index: -1;
   content: "";
   display: block;
-  position: relative;
+  position:relative;
   width: 100px;
   height: 60px;
   background: rgb(85, 85, 85);
@@ -34,21 +41,14 @@
   );
   border-radius: 50%;
   border: none;
-  left: 50%; /* Adjusted value to center horizontally within the button container */
-  top: 50%; /* Adjusted value to center vertically within the button container */
-  transform: translate(-50%, -50%); /* Add this line to center the button precisely */
-  -webkit-transition: all 0.3s ease;
+  left:calc(50% - 50px); /* Adjusted value to center horizontally within the button container */
+  top:calc(50% - 175px); /* Adjusted value to center vertically within the button container */
   transition: all 0.3s ease;
   box-shadow: 1px 4px 10px rgb(81, 81, 81);
+
 }
 
-.button:active {
-  top: calc(50% + 10px); /* Adjusted value for vertical position on button press */
-}
 
-.button:focus {
-  outline: none;
-}
 
 .baseButton {
   z-index: 1;
@@ -69,10 +69,9 @@
     rgb(46, 46, 46) 100%
   );
   border: none;
-  left: 50%; /* Adjusted value to center horizontally within the button container */
-  top: 50%; /* Adjusted value to center vertically within the button container */
+  left: calc(50% - 200px); /* Adjusted value to center horizontally within the button container */
+  top: calc(50% - 185px); /* Adjusted value to center vertically within the button container */
   transform: translate(-50%, -50%); /* Add this line to center the button precisely */
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -84,21 +83,22 @@
   width: 110px;
   height: 70px;
   background: rgb(39, 39, 39);
-  left: 0; /* Adjusted value to align with the button container's left edge */
-  top: 0; /* Adjusted value to align with the button container's top edge */
+  left: calc(50% - 55px); /* Adjusted value to align with the button container's left edge */
+  top: calc(50% - 46px); /* Adjusted value to align with the button container's top edge */
   transition: all 0.3s ease;
   box-shadow: 1px 10px 9px rgb(0, 0, 0);
 }
 
 .buttonContainer {
   position: relative;
-  left: 50px; /* Adjust the desired horizontal position on the screen */
-  top: 50px; /* Adjust the desired vertical position on the screen */
+  left: 600px; /* Adjust the desired horizontal position on the screen */
+  top: 500px; /* Adjust the desired vertical position on the screen */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100px;
+  transition: 1s;
 }
 
 
@@ -113,9 +113,9 @@
   transition: all 0.3s ease;
   border-radius: 50%;
   border: none;
-  left: 50%; // Adjusted value to center horizontally within the button container 
-  top: 50%; // Adjusted value to center vertically within the button container 
-  transform: //translate(-50%, -50%); /* Add this line to center the button precisely 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
   box-shadow: inset -2px -2px 0 1px rgb(136, 8, 8);
 }
 
@@ -140,16 +140,16 @@
   );
   border-radius: 50%;
   border: none;
-  left: 50%; // Adjusted value to center horizontally within the button container 
-  top: 50%; // Adjusted value to center vertically within the button container
-  transform:  translate(-50%, -50%); // Add this line to center the button precisely
+  left: 50%; 
+  top: 50%; 
+  transform:  translate(-50%, -50%); 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   box-shadow: 1px 4px 10px rgb(81, 81, 81);
 }
 
 .button:active {
-  top: calc(50% + 10px); // Adjusted value for vertical position on button press
+  top: calc(50% + 10px);
 }
 
 .button:focus {
@@ -175,9 +175,9 @@
     rgb(46, 46, 46) 100%
   );
   border: none;
-  left: 50%; // Adjusted value to center horizontally within the button container
-  top: 50%; // Adjusted value to center vertically within the button container 
-  transform: translate(-50%, -50%); // Add this line to center the button precisely 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -190,16 +190,16 @@
   width: 110px;
   height: 70px;
   background: rgb(39, 39, 39);
-  left: 0; // Adjusted value to align with the button container's left edge 
-  top: 0; // Adjusted value to align with the button container's top edge 
+  left: 0; 
+  top: 0; 
   transition: all 0.3s ease;
   box-shadow: 1px 10px 9px rgb(0, 0, 0);
 }
 
 .buttonContainer {
   position: relative;
-  left: 50px; // Adjust the desired horizontal position on the screen 
-  top: 50px; // Adjust the desired vertical position on the screen 
+  left: 50px; 
+  top: 50px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,11 +210,11 @@
 
 .buttonContainer{
   position: relative;
-  left: 50px; // Adjust the desired horizontal position 
-  top: 50px; // Adjust the desired vertical position
-    display: flex; // Add this line to enable flexbox layout
-  justify-content: center; // Center the button horizontally 
-  align-items: center; // Center the button vertically 
+  left: 50px; 
+  top: 50px; 
+    display: flex; 
+  justify-content: center; 
+  align-items: center; 
   height: 100px;
   width: 100px;
 }

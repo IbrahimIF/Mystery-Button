@@ -1,18 +1,64 @@
-.aws-btn {
-    --button-default-height: 64px;
-    --button-default-font-size: 18px;
-    --button-default-border-radius: 8px;
-    --button-horizontal-padding: 100px;
-    --button-raise-level: 7px;
-    --button-hover-pressure: 4;
-    --transform-speed: 0.275s;
-    --button-secondary-color: #d6d6d6;
-    --button-secondary-color-dark: #4f4f4f;
-    --button-secondary-color-light: #474747;
-    --button-secondary-color-hover: #ababab;
-    --button-secondary-border: 3px solid #787878;
-    }
-       
+.startButton {
+  background-color: #7f7f7f;
+  position: relative;
+  width: 180px;
+  height: 60px;
+  -webkit-transition: top 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 10%;
+  border: none;
+  left:calc(50% - 140px); /* Adjusted value to center horizontally within the button container */
+  top:calc(50% - 30px); /* Adjusted value to center vertically within the button container */
+  transform: translate(-50%, -50%); /* Add this line to center the button precisely */
+  box-shadow: inset -2px -2px 0 1px rgb(148, 148, 148);
+}
+.startButton:active {
+  top: calc(50% + 85px); /* Adjusted value for vertical position on button press */
+}
+
+.startButton:focus {
+  outline: none;
+}
+
+.startButtonBellow{
+  z-index: -1;
+  content: "";
+  display: block;
+  position:relative;
+  width: 180px;
+  height: 60px;
+  background: rgb(85, 85, 85);
+  background: linear-gradient(
+    to right,
+    rgb(55, 55, 55) 0%,
+    rgb(54, 54, 54) 58%,
+    rgb(53, 53, 53) 58%,
+    rgb(52, 52, 52),
+    rgb(51, 51, 51) 66%,
+    rgb(50, 50, 50) 72%,
+    rgb(48, 48, 49) 72%,
+    rgb(47, 47, 47) 100%
+  );
+  border-radius: 10%;
+  border: none;
+  left:calc(50% - 230px); /* Adjusted value to center horizontally within the button container */
+  top:calc(50% - 110px); /* Adjusted value to center vertically within the button container */
+  transition: all 0.3s ease;
+  box-shadow: 1px 4px 10px rgb(81, 81, 81);
+
+}
+
+
+.baseStartButton {
+  position: relative;
+  width: 180px;
+  height: 70px;
+  left: calc(50% - 60px); /* Adjusted value to align with the button container's left edge */
+  top: calc(50% - 46px); /* Adjusted value to align with the button container's top edge */
+  transition: all 0.3s ease;
+}
+
+
       .start-container {
         display: flex;
         flex-direction: column;
@@ -73,3 +119,5 @@ animation: fadeInText 10s;
     opacity: 0;
     pointer-events: none; /* Disable pointer events during fade-out */
   }
+
+
