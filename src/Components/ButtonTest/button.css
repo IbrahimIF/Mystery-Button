@@ -1,0 +1,356 @@
+
+
+/*
+    .base3{
+      z-index:0;
+      content: "";
+      position:fixed;
+      width:110px;
+      height:70px;
+      background: rgb(39, 39, 39);
+    background: linear-gradient(to right, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(88, 88, 88) 58%, rgbargb(172, 172, 172), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgba(105,150,156,1) 72%, rgba(105,150,156,1) 100%);
+      border:none;
+      left:calc(50% - 200px);
+      top:calc(50% - 200px);
+      -webkit-transition:all 0.3s ease;
+      transition:all 0.3s ease;
+      box-shadow:1px 10px 9px rgb(0, 0, 0);
+    }
+    .base3 :after{
+        z-index:-20;
+        content: "";
+        position:fixed;
+        width:110px;
+        height:70px;
+        background: rgb(39, 39, 39);
+        left:calc(50% - 200px);
+      top:calc(50% - 200px);
+        transition:all 0.3s ease;
+        box-shadow:1px 10px 9px rgb(0, 0, 0);
+    }
+
+
+    .button3{
+      background-color:#b11b1b;
+      position:relative;
+      width:100px;
+      height:60px;
+      -webkit-transition:top 0.3s ease;
+      transition:all 0.3s ease;
+      border-radius:50%;
+      border:none;
+      left:calc(50% - 50px);
+      top:calc(50% - 40px);
+      box-shadow:inset -2px -2px 0 1px rgb(136, 8, 8);
+    }
+    .button3:before{
+      z-index:-9;
+      content: "";
+      position:fixed;
+      width:100px;
+      height:60px;
+      background: rgb(85, 85, 85);
+    background: linear-gradient(to right, rgb(110, 0, 0) 0%, rgb(79, 0, 0) 58%, rgb(72, 0, 0) 58%,rgb(83, 0, 0), rgb(62, 0, 0) 66%, rgb(55, 0, 0) 72%, rgb(53, 0, 0) 72%, rgb(65, 0, 0) 100%);
+      border-radius:50%;
+      border:none;
+      left:calc(50% - 195px);
+      top:calc(50% - 195px);
+      -webkit-transition:all 0.3s ease;
+      transition:all 0.3s ease;
+      box-shadow:1px 4px 10px rgb(81, 81, 81);
+    }
+    .button3:active{
+      top:calc(50% - 40px + 10px);
+    }
+    .button3:focus{
+      outline:none; 
+    }
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1st button*/
+.base3 {
+  z-index: 1;
+  content: "";
+  position: fixed;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(to bottom, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(65, 65, 65) 58%, rgb(80, 80, 80), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgb(54, 54, 54) 72%, rgb(46, 46, 46) 100%);
+  border: none;
+  left: calc(50% - 200px);
+  top: calc(50% - 185px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+.base3:before {
+  z-index: -5;
+  content: "";
+  position: fixed;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  transition: all 0.3s ease;
+  box-shadow: 1px 10px 9px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*2nd button*/
+
+.base2{
+  z-index:0;
+  content: "";
+  position:fixed;
+  width:110px;
+  height:70px;
+  background: rgb(39, 39, 39);
+background: linear-gradient(to right, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(88, 88, 88) 58%, rgbargb(172, 172, 172), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgba(105,150,156,1) 72%, rgba(105,150,156,1) 100%);
+  border:none;
+  left:calc(50% - 200px);
+  top:calc(50% - 200px);
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  box-shadow:1px 10px 9px rgb(0, 0, 0);
+}
+.base2 :after{
+    z-index:-20;
+    content: "";
+    position:fixed;
+    width:110px;
+    height:70px;
+    background: rgb(39, 39, 39);
+    left:calc(50% - 200px);
+  top:calc(50% - 200px);
+    transition:all 0.3s ease;
+    box-shadow:1px 10px 9px rgb(0, 0, 0);
+}
+
+
+.button2{
+  background-color:#b11b1b;
+  position:relative;
+  width:100px;
+  height:60px;
+  -webkit-transition:top 0.3s ease;
+  transition:all 0.3s ease;
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 50px);
+  top:calc(50% - 40px);
+  box-shadow:inset -2px -2px 0 1px rgb(136, 8, 8);
+}
+.button2:before{
+  z-index:-9;
+  content: "";
+  position:fixed;
+  width:100px;
+  height:60px;
+  background: rgb(85, 85, 85);
+background: linear-gradient(to right, rgb(110, 0, 0) 0%, rgb(79, 0, 0) 58%, rgb(72, 0, 0) 58%,rgb(83, 0, 0), rgb(62, 0, 0) 66%, rgb(55, 0, 0) 72%, rgb(53, 0, 0) 72%, rgb(65, 0, 0) 100%);
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 195px);
+  top:calc(50% - 195px);
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  box-shadow:1px 4px 10px rgb(81, 81, 81);
+}
+.button2:active{
+  top:calc(50% - 40px + 10px);
+}
+.button2:focus{
+  outline:none; 
+}
+
+
+
+
+
+
+
+
+
+
+/*3rd button*/
+
+.base3 {
+  z-index: 1;
+  content: "";
+  position: fixed;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(to bottom, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(65, 65, 65) 58%, rgb(80, 80, 80), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgb(54, 54, 54) 72%, rgb(46, 46, 46) 100%);
+  border: none;
+  left: calc(50% - 200px);
+  top: calc(50% - 185px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+.base3:before {
+  z-index: -5;
+  content: "";
+  position: fixed;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  transition: all 0.3s ease;
+  box-shadow: 1px 10px 9px rgb(0, 0, 0);
+}
+
+
+
+.button3 {
+  z-index: 2;
+  background-color: #b11b1b;
+  position: fixed;
+  width: 100px;
+  height: 60px;
+  -webkit-transition: top 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+  top: calc(50% - 60px);
+  border: none;
+  box-shadow: inset -2px -2px 0 1px rgb(136, 8, 8);
+}
+
+.button3:before {
+z-index: -2;
+  content: "";
+  position: fixed;
+  width: 100px;
+  height: 60px;
+  background: rgb(85, 85, 85);
+  background: linear-gradient(to right, rgb(110, 0, 0) 0%, rgb(79, 0, 0) 58%, rgb(72, 0, 0) 58%, rgb(83, 0, 0), rgb(62, 0, 0) 66%, rgb(55, 0, 0) 72%, rgb(53, 0, 0) 72%, rgb(65, 0, 0) 100%);
+  border-radius: 50%;
+  border: none;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 1px 4px 10px rgb(81, 81, 81);
+}
+
+.button3:active {
+  top: calc(50% - 40px + 10px);
+}
+
+.button3:focus {
+  outline: none; 
+}
+
+
+
+
+
+
+
+
+
+
+/*4th button*/
+
+.button4{
+  background-color:#b11b1b;
+  position:relative;
+  width:100px;
+  height:60px;
+  -webkit-transition:top 0.3s ease;
+  transition:all 0.3s ease;
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 50px);
+  top:calc(50% - 50px);
+  box-shadow:inset -2px -2px 0 1px rgb(136, 8, 8);
+}
+.button4:before{
+  z-index:-9;
+  content: "";
+  position:fixed;
+  width:100px;
+  height:60px;
+  background: rgb(85, 85, 85);
+background: linear-gradient(to right, rgb(110, 0, 0) 0%, rgb(79, 0, 0) 58%, rgb(72, 0, 0) 58%,rgb(83, 0, 0), rgb(62, 0, 0) 66%, rgb(55, 0, 0) 72%, rgb(53, 0, 0) 72%, rgb(65, 0, 0) 100%);
+  border-radius:50%;
+  border:none;
+  left:calc(50% - 50px);
+  top:calc(50% - 20px);
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  box-shadow:1px 4px 10px rgb(81, 81, 81);
+}
+.button4:active{
+  top:calc(50% - 43px + 10px);
+}
+.button4:focus{
+  outline:none; 
+}
+
+.base4{
+  z-index:0;
+  content: "";
+  position:fixed;
+  width:110px;
+  height:70px;
+  background: rgb(39, 39, 39);
+background: linear-gradient(to right, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(88, 88, 88) 58%, rgbargb(172, 172, 172), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgba(105,150,156,1) 72%, rgba(105,150,156,1) 100%);
+  border:none;
+  left:calc(50% - 55px);
+  top:calc(50% - 21px);
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  box-shadow:1px 10px 9px rgb(0, 0, 0);
+}.base4 :after{
+  z-index:-20;
+  content: "";
+  position:fixed;
+  width:110px;
+  height:70px;
+  background: rgb(39, 39, 39);
+  left:calc(50% - 55px);
+  top:calc(50% - 21px);
+  transition:all 0.3s ease;
+  box-shadow:1px 10px 9px rgb(0, 0, 0);
+}

@@ -191,3 +191,15 @@
       clip-path: polygon(0 75%, 100% 75%, 100% 100%, 0 100%);
     }
   }
+
+  
+  .fade-container {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
+  }
+  
+  .fadeout {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events during fade-out */
+  }

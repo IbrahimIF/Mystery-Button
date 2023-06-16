@@ -1,37 +1,52 @@
-
+import React, { useEffect, useState } from 'react';
 import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css';
 import'./StartScreen.css';
-import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import pressSound from "../../assets/audio/app button click sound.mp3"
 
 function StartButton() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [fadeout, setFadeout] = useState(false);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (fadeout) {
+      const timer = setTimeout(() => {
+        navigate('/Main');
+      }, 3000); // Change page after 3 seconds (adjust the duration as needed)
 
-  const handleHover = () => {
-    setIsHovered(true);
+      return () => clearTimeout(timer);
+    }
+  }, [fadeout, navigate]);
+
+
+  const handleButtonClick = () => {
+    setFadeout(true);
+    // Additional actions or logic to perform when the button is clicked
   };
 
-  const handleHoverExit = () => {
-    setIsHovered(false);
-  };
 return(
+
 <>
+<audio id="myAudio">
+  <source src={pressSound} type="audio/mpeg"></source>
+</audio>
+
+<div className={`fadein ${fadeout ? 'fadeout' : ''}`} >
 <div className="container">
-        <div
-          className={`start-container ${isHovered ? 'hovered' : ''}`}
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHoverExit}
-        >
-          <AwesomeButton type="secondary" href="/Main">
+        <div className="start-container">
+          <AwesomeButton type="secondary"  href='/Main' onClick={handleButtonClick}>
             Start
           </AwesomeButton>
+
           <div className="textContainer">
           <span className="title">Game Objective:</span>
             <span className="text"> Explore numerous pages and find all 10 buttons.</span>
           </div>
         </div>
       </div>
+</div>
+
 </>
   
 );

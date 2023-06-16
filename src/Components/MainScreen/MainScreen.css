@@ -1,44 +1,221 @@
-body{
-  background-color:#ededed;
-  margin:0;
+.button {
+  background-color: #b11b1b;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  -webkit-transition: top 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  border: none;
+  left: 50%; /* Adjusted value to center horizontally within the button container */
+  top: 50%; /* Adjusted value to center vertically within the button container */
+  transform: translate(-50%, -50%); /* Add this line to center the button precisely */
+  box-shadow: inset -2px -2px 0 1px rgb(136, 8, 8);
 }
-button{
-  background-color:#b11b1b;
-  position:relative;
-  width:100px;
-  height:60px;
-  -webkit-transition:top 0.3s ease;
-  transition:all 0.3s ease;
-  border-radius:50%;
-  border:none;
-  left:calc(50% - 50px);
-  top:calc(50vh - 30px);
-  box-shadow:inset -2px -2px 0 1px rgb(136, 8, 8);
-}
-button:before{
-  z-index:-9;
-  content: "press";
-  position:fixed;
-  width:100px;
-  height:60px;
+
+.button:before {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 60px;
   background: rgb(85, 85, 85);
-background: linear-gradient(to right, rgb(67, 67, 67) 0%, rgb(46, 46, 46) 58%, rgb(88, 88, 88) 58%, rgbargb(172, 172, 172), rgb(32, 32, 32) 66%, rgb(52, 52, 52) 72%, rgba(105,150,156,1) 72%, rgba(105,150,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#012e34', endColorstr='#69969c', GradientType=1 );
-  border-radius:50%;
-  border:none;
-  left:calc(50% - 50px);
-  top:calc(50vh - 20px);
-  -webkit-transition:all 0.3s ease;
-  transition:all 0.3s ease;
-  box-shadow:1px 4px 10px rgb(81, 81, 81);
-}
-button:active{
-  top:calc(50vh - 30px + 10px);
-}
-button:focus{
-  outline:none; 
+  background: linear-gradient(
+    to right,
+    rgb(110, 0, 0) 0%,
+    rgb(79, 0, 0) 58%,
+    rgb(72, 0, 0) 58%,
+    rgb(83, 0, 0),
+    rgb(62, 0, 0) 66%,
+    rgb(55, 0, 0) 72%,
+    rgb(53, 0, 0) 72%,
+    rgb(65, 0, 0) 100%
+  );
+  border-radius: 50%;
+  border: none;
+  left: 50%; /* Adjusted value to center horizontally within the button container */
+  top: 50%; /* Adjusted value to center vertically within the button container */
+  transform: translate(-50%, -50%); /* Add this line to center the button precisely */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 1px 4px 10px rgb(81, 81, 81);
 }
 
-.base{
-
+.button:active {
+  top: calc(50% + 10px); /* Adjusted value for vertical position on button press */
 }
+
+.button:focus {
+  outline: none;
+}
+
+.baseButton {
+  z-index: 1;
+  content: "";
+  position: relative;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(
+    to bottom,
+    rgb(67, 67, 67) 0%,
+    rgb(46, 46, 46) 58%,
+    rgb(65, 65, 65) 58%,
+    rgb(80, 80, 80),
+    rgb(32, 32, 32) 66%,
+    rgb(52, 52, 52) 72%,
+    rgb(54, 54, 54) 72%,
+    rgb(46, 46, 46) 100%
+  );
+  border: none;
+  left: 50%; /* Adjusted value to center horizontally within the button container */
+  top: 50%; /* Adjusted value to center vertically within the button container */
+  transform: translate(-50%, -50%); /* Add this line to center the button precisely */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.baseButton:before {
+  z-index: -5;
+  display: block;
+  content: "";
+  position: relative;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  left: 0; /* Adjusted value to align with the button container's left edge */
+  top: 0; /* Adjusted value to align with the button container's top edge */
+  transition: all 0.3s ease;
+  box-shadow: 1px 10px 9px rgb(0, 0, 0);
+}
+
+.buttonContainer {
+  position: relative;
+  left: 50px; /* Adjust the desired horizontal position on the screen */
+  top: 50px; /* Adjust the desired vertical position on the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/*
+.button {
+  background-color: #b11b1b;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  -webkit-transition: top 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  border: none;
+  left: 50%; // Adjusted value to center horizontally within the button container 
+  top: 50%; // Adjusted value to center vertically within the button container 
+  transform: //translate(-50%, -50%); /* Add this line to center the button precisely 
+  box-shadow: inset -2px -2px 0 1px rgb(136, 8, 8);
+}
+
+.button:before {
+  z-index: -1;
+  content: "";
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  background: rgb(85, 85, 85);
+  background: linear-gradient(
+    to right,
+    rgb(110, 0, 0) 0%,
+    rgb(79, 0, 0) 58%,
+    rgb(72, 0, 0) 58%,
+    rgb(83, 0, 0),
+    rgb(62, 0, 0) 66%,
+    rgb(55, 0, 0) 72%,
+    rgb(53, 0, 0) 72%,
+    rgb(65, 0, 0) 100%
+  );
+  border-radius: 50%;
+  border: none;
+  left: 50%; // Adjusted value to center horizontally within the button container 
+  top: 50%; // Adjusted value to center vertically within the button container
+  transform:  translate(-50%, -50%); // Add this line to center the button precisely
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 1px 4px 10px rgb(81, 81, 81);
+}
+
+.button:active {
+  top: calc(50% + 10px); // Adjusted value for vertical position on button press
+}
+
+.button:focus {
+  outline: none;
+}
+
+.baseButton {
+  z-index: 1;
+  content: "";
+  position: relative;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(
+    to bottom,
+    rgb(67, 67, 67) 0%,
+    rgb(46, 46, 46) 58%,
+    rgb(65, 65, 65) 58%,
+    rgb(80, 80, 80),
+    rgb(32, 32, 32) 66%,
+    rgb(52, 52, 52) 72%,
+    rgb(54, 54, 54) 72%,
+    rgb(46, 46, 46) 100%
+  );
+  border: none;
+  left: 50%; // Adjusted value to center horizontally within the button container
+  top: 50%; // Adjusted value to center vertically within the button container 
+  transform: translate(-50%, -50%); // Add this line to center the button precisely 
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.baseButton:before {
+  z-index: -5;
+  display: block;
+  content: "";
+  position: relative;
+  width: 110px;
+  height: 70px;
+  background: rgb(39, 39, 39);
+  left: 0; // Adjusted value to align with the button container's left edge 
+  top: 0; // Adjusted value to align with the button container's top edge 
+  transition: all 0.3s ease;
+  box-shadow: 1px 10px 9px rgb(0, 0, 0);
+}
+
+.buttonContainer {
+  position: relative;
+  left: 50px; // Adjust the desired horizontal position on the screen 
+  top: 50px; // Adjust the desired vertical position on the screen 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+
+.buttonContainer{
+  position: relative;
+  left: 50px; // Adjust the desired horizontal position 
+  top: 50px; // Adjust the desired vertical position
+    display: flex; // Add this line to enable flexbox layout
+  justify-content: center; // Center the button horizontally 
+  align-items: center; // Center the button vertically 
+  height: 100px;
+  width: 100px;
+}
+*/

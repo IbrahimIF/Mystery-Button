@@ -4,10 +4,13 @@ function MainScreen() {
 
 
   return (
-    <div>
-      <div className="base"></div>
-      <button><p className="text">press</p></button>
+  <>
+    <div className="buttonContainer">
+      <div className="baseButton">
+        <button className="button"><p className="text">Button</p></button>
+      </div>
     </div>
+  </>
   );
 }
 

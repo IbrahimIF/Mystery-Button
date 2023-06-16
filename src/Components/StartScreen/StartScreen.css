@@ -12,17 +12,7 @@
     --button-secondary-color-hover: #ababab;
     --button-secondary-border: 3px solid #787878;
     }
-
-    .container {
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        left: calc(50% - 50px);
-        top: calc(50vh - 100px);
-      }
-      
+       
       .start-container {
         display: flex;
         flex-direction: column;
@@ -38,6 +28,7 @@
       .textContainer {
         margin-top: 20px;
 text-align: center;
+animation: fadeInText 10s;
       }
       
       .title {
@@ -56,3 +47,29 @@ text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
       }
+
+      .fadein {
+        animation: fadeIn 5s;
+      }
+      
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+      @keyframes fadeInText {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+      }
+
+
+
+       .fade-container {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
+  }
+  
+  .fadeout {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events during fade-out */
+  }
