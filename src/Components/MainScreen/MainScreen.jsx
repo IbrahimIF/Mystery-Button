@@ -1,8 +1,7 @@
-
+import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import "./MainScreen.css"
 function MainScreen() {
-
-
   return (
   <>
   <div className="flip">

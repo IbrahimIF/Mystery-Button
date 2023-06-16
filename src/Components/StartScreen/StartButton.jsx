@@ -11,7 +11,7 @@ function StartButton() {
     if (fadeout) {
       const timer = setTimeout(() => {
         navigate('/Main');
-      }, 3000); // Change page after 3 seconds (adjust the duration as needed)
+      }, 3000); 
 
       return () => clearTimeout(timer);
     }
@@ -23,7 +23,7 @@ function StartButton() {
 
     setTimeout(() => {
       setFadeout(true);
-    }, 500); // Add a delay of 500 milliseconds before fading out (adjust as needed)
+    }, 0);
   };
 
 return(

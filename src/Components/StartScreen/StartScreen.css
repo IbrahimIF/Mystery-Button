@@ -13,7 +13,7 @@
   box-shadow: inset -2px -2px 0 1px rgb(148, 148, 148);
 }
 .startButton:active {
-  top: calc(50% + 85px); /* Adjusted value for vertical position on button press */
+  top: calc(50% + -20px); /* Adjusted value for vertical position on button press */
 }
 
 .startButton:focus {
