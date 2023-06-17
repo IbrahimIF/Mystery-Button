@@ -101,6 +101,10 @@
   transition: 1s;
 }
 
+.flip {
+  transition: 1s;
+  transform-style: preserve-3d;
+}
 
 
 /*

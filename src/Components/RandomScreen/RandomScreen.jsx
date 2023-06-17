@@ -75,7 +75,7 @@ function RandomScreen() {
           </div>
         );
       }else if (media.type === 'snoopDog') {
-        setTimeoutDuration(79200); // Set the timeout to 1 seconds
+        setTimeoutDuration(80200); // Set the timeout to 1 seconds
         return (
           <div>
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
