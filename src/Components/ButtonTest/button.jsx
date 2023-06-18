@@ -7,29 +7,33 @@ function StartButton() {
 
 return(
 <>
-<div className="container">
-  <div className="base1"></div>
-    <button className="button1"><p>press</p></button>
-</div>
+<div className="buttonContainer">
 
-<div className="container">
-  <div className="base2"></div>
-  <div className="button-container">
-    <button className="button2"><p>press</p></button>
+  <div className="flip-box">
+
+    <div className="flip-box-front">
+    </div>
+
+    <div className="flip-box-back">
+
+<div className="D3animation">
+
+        <div className="baseButton">
+          <button className="button">
+            <p className="text">Button</p>
+          </button>
+          <div className="buttonBellow">
+          </div>
+        </div>
+
+</div>
+ 
+    </div>
+
   </div>
+
 </div>
 
-<div className="container">
-  <div className="base3"></div>
-  <div className="button-container">
-    <button className="button3"><p>press</p></button>
-  </div>
-</div>
-
-<div>
-  <div className="base4"></div>
-    <button className="button4"><p>press</p></button>
-</div>
 
 </>
   
