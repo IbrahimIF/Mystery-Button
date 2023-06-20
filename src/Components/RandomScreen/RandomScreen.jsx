@@ -18,21 +18,8 @@ function RandomScreen() {
 
               { type: 'troll', url: 'https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png' },
 
-              { type: 'troll2', url: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
-                                url2: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
-                                url3: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
-                                url4: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
-                                url5: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
-                                url6: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
-                                url7: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
-                                url8: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1', 
-                                url9: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1',
-                                url10: 'https://www.youtube.com/embed/ygPmpYr3Q8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'
-              },
-
-
               { type: 'snoopDog', url: 'https://www.youtube.com/embed/DJfg39WkMvE?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'snoopDog', url: 'https://www.youtube.com/embed/dBqMxvqLQuw?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=4'},
+              
 
               { type: 'jackBlack', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=50'},
               
@@ -95,7 +82,14 @@ function RandomScreen() {
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
           </div>
         );
-      } else if (media.type === 'short') {
+      } else if (media.type === 'Normal') {
+        setTimeoutDuration(15000); // Set the timeout to 15 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }} >
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
+          </div>
+        );
+      } else if (media.type === 'shorter') {
         setTimeoutDuration(9000); // Set the timeout to 8 seconds
         return (
           <div style={{ pointerEvents: 'none' }} >
@@ -109,23 +103,7 @@ function RandomScreen() {
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
           </div>
         );
-        } else if (media.type === 'troll2') {
-        setTimeoutDuration(8000); // Set the timeout to 8 seconds
-        return (
-          <div style={{ pointerEvents: 'none' }} >
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
-            <iframe width="900" height="655" src={media.url2} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url3} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url4} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url5} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url6} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url7} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url8} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url9} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-            <iframe width="900" height="655" src={media.url10} title="YouTube video player" allow=" autoplay;  encrypted-media; " ></iframe>
-          </div>
-        );
-      }
+        } 
     }
 
     setMedia(chooseRandomMedia());
@@ -135,7 +113,7 @@ function RandomScreen() {
   useEffect(() => {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
-        navigate("/Main");
+        navigate("/Button");
         
       }, timeoutDuration);
 
