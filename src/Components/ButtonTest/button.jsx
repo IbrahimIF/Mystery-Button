@@ -1,9 +1,11 @@
 
 import 'react-awesome-button/dist/styles.css';
 import'./button.css';
+import React, { useEffect } from 'react';
 
 
 function StartButton() {
+
 
 return(
 <>
@@ -17,14 +19,15 @@ return(
     <div className="flip-box-back">
 
 <div className="D3animation">
-
-        <div className="baseButton">
+        <div className="baseButton2">
+        
           <button className="button">
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow">
           </div>
         </div>
+        
 
 </div>
  

@@ -6,6 +6,14 @@ function MainScreen() {
    return (
     <>
     <div className="buttonContainer">
+    <div className="flip-box">
+
+<div className="flip-box-front">
+</div>
+
+<div className="flip-box-back">
+
+<div className="D3animation">
         <div className="baseButton">
           <Link to="/Random">
             <button className="button">
@@ -15,6 +23,11 @@ function MainScreen() {
           <div className="buttonBellow"></div>
         </div>
       </div>
+      </div>
+
+</div>
+
+</div>
     </>
   );
 }
