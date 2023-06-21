@@ -14,96 +14,132 @@ function RandomScreen() {
     function chooseRandomMedia() {
       const mediaList = [
               // Media list (images and videos)
-              { type: 'image', url: 'https://i.postimg.cc/mkgq17LH/giganigga.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
+              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
 
-              { type: 'troll', url: 'https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png' },
+              { type: 'ClashRoyale', url: 'https://i.postimg.cc/L4Ppr32t/clash-royale.gif' },
 
               { type: 'snoopDog', url: 'https://www.youtube.com/embed/DJfg39WkMvE?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              
 
               { type: 'jackBlack', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=50'},
-              
-              { type: 'video', url: 'https://www.youtube.com/embed/IGprEUpFmz0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/yUGZwlLoZh0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/K-bP87jsrW4?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/h7FJ9ddRNdA?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/Z93msbCiHnM?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'video', url: 'https://www.youtube.com/embed/PGfhtLrwiKo?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=7'},
 
-              { type: 'short', url: 'https://www.youtube.com/embed/2gMemLkfYWY?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/iRTNUTcPZL4?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/ny09IWBXVEo?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/MfA6NAha2K0?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/tY875eoXAj4?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/08XyCs4yVEU?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/SqE2J9V3a8A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/5edf0roC98A?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: 'https://www.youtube.com/embed/6eA4YXjOEnQ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'short', url: '?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenLongerVideo', url: 'https://www.youtube.com/embed/OnFYspZag28?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenLongerVideo', url: 'https://www.youtube.com/embed/w56X_U9TZ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/fjCOot3CApc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/8Mk69SFfCrc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/eLliSjYVqp8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/vzcGtJ2TC3I?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/04u2ctimwss?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/gDul8BcdeNk?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/7QOaq1KuccM?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/I8B1f4aGFm8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/6oeMjXVSECU?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/RxW4EhTXBaI?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/BdAPj5snkwk?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/gPf1z3Itkuc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=32&end=48'},
+
+              { type: 'ShorterVideo', url: 'https://www.youtube.com/embed/WzEYq2o3GCQ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'ShorterVideo', url: 'https://www.youtube.com/embed/IzV-EoGxtME?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/zOYJDdqDhR8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/aq_UO_ttn-k?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/KBudxCO61w?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/aH56oeU5soo?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/1iG_d0tgZEY?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=05'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/WHq_pVtvFso?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=30&end=35'},
               // Add more images and YouTube links to the list
       ];
 
       const randomIndex = Math.floor(Math.random() * mediaList.length);
       const media = mediaList[randomIndex];
 
-      if (media.type === 'image') {
+
+
+
+
+      if (media.type === 'Image') {
         setTimeoutDuration(3000); // Set the timeout to 3 seconds
         return (
-          <div>
+          <div style={{ pointerEvents: 'none' }}>
             <img width="900" height="655" src={media.url} alt="random" />
           </div>
         );
-      } else if (media.type === 'troll') {
-        setTimeoutDuration(1000); // Set the timeout to 1 seconds
-        return (
-          <div>
-            <img width="900" height="655" src={media.url} alt="random" />
-          </div>
-        );
-      }else if (media.type === 'snoopDog') {
-        setTimeoutDuration(80200); // Set the timeout to 1 seconds
-        return (
-          <div>
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
-          </div>
-        );
-      }else if (media.type === 'longer') {
-        setTimeoutDuration(1000); // Set the timeout to 1 seconds
-        return (
-          <div>
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
-          </div>
-        );
-      } else if (media.type === 'video') {
-        setTimeoutDuration(15000); // Set the timeout to 15 seconds
+      }else if (media.type === 'ClashRoyale') {
+        setTimeoutDuration(3000); // Set the timeout to 3 seconds
         return (
           <div style={{ pointerEvents: 'none' }}>
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
+            <img width="900" height="655" src={media.url} alt="random" />
           </div>
         );
-      } else if (media.type === 'Normal') {
-        setTimeoutDuration(15000); // Set the timeout to 15 seconds
-        return (
-          <div style={{ pointerEvents: 'none' }} >
-            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
-          </div>
-        );
-      } else if (media.type === 'shorter') {
+      }
+      /////////////////////////////////
+      else if (media.type === 'Shorts') {
         setTimeoutDuration(9000); // Set the timeout to 8 seconds
         return (
           <div style={{ pointerEvents: 'none' }} >
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
           </div>
         );
-      } else if (media.type === 'jackBlack') {
+      } 
+      ////////////////////////////////////
+      else if (media.type === 'NormalVideo') {
+        setTimeoutDuration(13000); // Set the timeout to 12 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }}>
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
+          </div>
+        );
+      }else if (media.type === 'EvenLongerVideo') {
+        setTimeoutDuration(25000); // Set the timeout to 25 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }}>
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
+          </div>
+        );
+      }else if (media.type === 'LongerVideo') {
+        setTimeoutDuration(18000); // Set the timeout to 18 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }}>
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
+          </div>
+        );
+      }else if (media.type === 'ShorterVideo') {
+        setTimeoutDuration(9000); // Set the timeout to 8 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }} >
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
+          </div>
+        );
+      } else if (media.type === 'EvenShorterVideo') {
+        setTimeoutDuration(7000); // Set the timeout to 7 seconds
+        return (
+          <div style={{ pointerEvents: 'none' }} >
+            <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
+          </div>
+        );
+      } 
+      //////////////////////////////////////////////////////////////
+      else if (media.type === 'jackBlack') {
         setTimeoutDuration(33000); // Set the timeout to 33 seconds
         return (
           <div style={{ pointerEvents: 'none' }} >
             <iframe width="900" height="655" src={media.url} title="YouTube video player" allow="autoplay; encrypted-media;"></iframe>
           </div>
         );
-        } 
+        }else if (media.type === 'snoopDog') {
+          setTimeoutDuration(81000); // Set the timeout to 1 minute and 30 seconds
+          return (
+            <div style={{ pointerEvents: 'none' }}>
+              <iframe width="900" height="655" src={media.url} title="YouTube video player" allow=" autoplay;  encrypted-media;"></iframe>
+            </div>
+          );
+        }
     }
 
     setMedia(chooseRandomMedia());
