@@ -6,3 +6,9 @@ A random button thats placed at the start that will generate a random youtube vi
 
 ## Introduction
 The Mysterious Red Button Game is built using a combination of technologies, including Tailwind CSS, basic CSS, JavaScript, and React with Vite. Vite is a fast and opinionated web development build tool that aims to provide an enjoyable development experience. It features lightning-fast cold server start, instant hot module replacement (HMR), and a highly optimized build process.
+
+## Getting Started
+**1.** ### Clone the repository:
+```
+> git clone <repository-url>
+```
