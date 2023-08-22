@@ -1,18 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect,} from "react";
+import { useCounter } from '../CounterContext/CounterContext';
 import "./RandomScreen.css";
 function RandomScreen() {
 
   const navigate = useNavigate();
-  const [loadCounter, setLoadCounter] = useState(0);
-
+  const { counter, incrementCounter } = useCounter();
   // Media state
   const [media, setMedia] = useState(null);
   const [timeoutDuration, setTimeoutDuration] = useState(null);
 
   // Choose random media
   useEffect(() => {
-    setLoadCounter(loadCounter + 1);
     function chooseRandomMedia() {
       const mediaList = [
               // Media list (images and videos)
@@ -151,7 +150,12 @@ function RandomScreen() {
   useEffect(() => {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
-        navigate("/Button");
+        if (counter < 2){
+          navigate("/Button");
+        }
+        else{
+          navigate ("/loadingScreen");
+        }
         
       }, timeoutDuration);
 
@@ -160,7 +164,7 @@ function RandomScreen() {
         clearTimeout(timer);
       };
     }
-  }, [timeoutDuration, navigate]);
+  }, [timeoutDuration, counter, navigate]);
 
   // Refresh media on click
   function refreshMedia() {
@@ -172,7 +176,7 @@ return(
 <div className="media" onClick={refreshMedia}>
         {media}
       </div>
-      <p className="counter">can you see this {loadCounter}</p>
+      <p className="counter">can you see this {counter}</p>
     </div>
 );
 }

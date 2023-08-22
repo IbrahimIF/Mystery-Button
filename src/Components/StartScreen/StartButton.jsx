@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import'./StartScreen.css';
 import { useNavigate } from 'react-router-dom';
 import pressSound from "../../assets/audio/app button click sound.mp3"
+import { useCounter } from '../CounterContext/CounterContext';
 
 function StartButton() {
   const [fadeout, setFadeout] = useState(false);
   const navigate = useNavigate();
+  const { resetCounter } = useCounter();
 
   useEffect(() => {
     if (fadeout) {
       const timer = setTimeout(() => {
+        resetCounter();
         navigate('/Main');
       }, 4000); 
 

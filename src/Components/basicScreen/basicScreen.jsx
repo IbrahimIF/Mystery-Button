@@ -4,20 +4,26 @@ import press from "../../assets/audio/Click - Sound Effect (HD).mp3"
 import press2 from "../../assets/audio/Goat Scream - Sound Effect (HD).mp3"
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import {useCounter} from '../CounterContext/CounterContext';
 
 function MainScreen() {
   const [counter, setCounter] = useState(0);
   const navigate = useNavigate();
+  const { incrementCounter } = useCounter();
+
 
   const handleButtonClick = () => {
     const audio = new Audio(press);
     audio.play();
+
+    incrementCounter();
 
     const timer = setTimeout(() => {
       navigate('/Random');
     }, 200); //0.2 second 
 
     return () => clearTimeout(timer);
+   
   };
  
   const start = () => {
