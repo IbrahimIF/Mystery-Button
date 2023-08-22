@@ -4,6 +4,7 @@ import "./RandomScreen.css";
 function RandomScreen() {
 
   const navigate = useNavigate();
+  const [loadCounter, setLoadCounter] = useState(0);
 
   // Media state
   const [media, setMedia] = useState(null);
@@ -11,6 +12,7 @@ function RandomScreen() {
 
   // Choose random media
   useEffect(() => {
+    setLoadCounter(loadCounter + 1);
     function chooseRandomMedia() {
       const mediaList = [
               // Media list (images and videos)
@@ -170,6 +172,7 @@ return(
 <div className="media" onClick={refreshMedia}>
         {media}
       </div>
+      <p className="counter">can you see this {loadCounter}</p>
     </div>
 );
 }

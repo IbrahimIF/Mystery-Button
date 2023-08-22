@@ -35,3 +35,12 @@ iframe {
   overflow: hidden;
 }
 
+
+.counter{
+  z-index: 5;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+color: white;
+}

@@ -23,7 +23,7 @@ function StartButton() {
 
     setTimeout(() => {
       setFadeout(true);
-    }, 1);
+    }, 5);
   };
 
 return(
@@ -38,7 +38,7 @@ return(
         <div className="start-container">
         
         <div className="baseStartButton">
-        <button className='startButton' href='/Main' onClick={handleButtonClick}>
+        <button className='startButton' onClick={handleButtonClick}>
             Start
           </button>
           <div className='startButtonBellow'></div>
