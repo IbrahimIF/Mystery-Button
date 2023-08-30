@@ -13,7 +13,7 @@ function StartButton() {
     if (fadeout) {
       const timer = setTimeout(() => {
         resetCounter();
-        navigate('/Main');
+        navigate('/First');
       }, 4000); 
 
       return () => clearTimeout(timer);
@@ -26,7 +26,7 @@ function StartButton() {
 
     setTimeout(() => {
       setFadeout(true);
-    }, 5);
+    }, 6);
   };
 
 return(

@@ -151,10 +151,11 @@ function RandomScreen() {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
         if (counter < 2){
-          navigate("/Button");
+          navigate("/Fourth");
+          counter + 1
         }
         else{
-          navigate ("/loadingScreen");
+          navigate ("/Hidden");
         }
         
       }, timeoutDuration);

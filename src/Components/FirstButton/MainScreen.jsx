@@ -10,7 +10,7 @@ function MainScreen() {
     audio.play();
 
     const timer = setTimeout(() => {
-      navigate('/Random');
+      navigate('/Second');
     }, 200); //0.2 second 
 
     return () => clearTimeout(timer);
@@ -22,8 +22,10 @@ function MainScreen() {
     <source src={press} type="audio/mpeg"></source>
   </audio>
 
+
 <div className="buttonContainer">
-  <div className="flip-box">
+<div className="bellow"></div>
+<div className="flip-box">
     <div className="flip-box-front"></div>
     <div className="flip-box-back">
       <div className="D3animation">
