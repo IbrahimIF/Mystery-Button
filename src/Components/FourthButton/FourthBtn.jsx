@@ -2,9 +2,11 @@ import "./FourthBtn.css";
 import press from "../../assets/audio/Click - Sound Effect (HD).mp3"
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import {useCounter} from '../../Components/CounterContext/CounterContext';
 
 function MainScreen() {
   const navigate = useNavigate();
+  const { incrementCounter } = useCounter();
 
   const handleButtonClick = () => {
     const audio = new Audio(press);
@@ -15,6 +17,7 @@ function MainScreen() {
   const handleButtonOn = () => {
     const audio = new Audio(press);
     audio.play();
+    incrementCounter();
     navigate("/Random");
   }
   
