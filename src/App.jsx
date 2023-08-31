@@ -6,6 +6,8 @@ import Secondbtn from'./Components/SecondButton/SecondBtn';
 import Thirdbtn from'./Components/ThirdButton/ThirdBtn';
 import Fourthbtn from'./Components/FourthButton/FourthBtn';
 import RandomScreen from './Components/RandomScreen/RandomScreen';
+import Hiddenbtn from './Components/HiddenButton/HiddenScreen';
+import Monday from './Components/MondayScreen/MondayScreen';
 import { CounterProvider } from './Components/CounterContext/CounterContext';
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
   <Route path="/Second" element={<Secondbtn />} />
   <Route path="/Third" element={<Thirdbtn />} />
   <Route path="/Fourth" element={<Fourthbtn />} />
+  <Route path="/Hidden" element={<Hiddenbtn />} />
   <Route path="/Random" element={<RandomScreen />} />
+  <Route path="/Monday" element={<Monday />} />
 </Routes>
     </CounterProvider>
     </BrowserRouter>

@@ -20,7 +20,10 @@ function MainScreen() {
     if (counter > 3){
       navigate("/Third");
     }
+
+
   }
+
   
    return (
 <>

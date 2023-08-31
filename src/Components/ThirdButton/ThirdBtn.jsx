@@ -7,6 +7,7 @@ import {useCounter} from '../../Components/CounterContext/CounterContext';
 function MainScreen() {
   const navigate = useNavigate();
   const { incrementCounter } = useCounter();
+  const [counter, setCounter] = useState(0);
 
   const handleButtonClick = () => {
     const audio = new Audio(press);
@@ -20,7 +21,16 @@ function MainScreen() {
 
     incrementCounter();
     navigate("/Random");
-  }
+  };
+
+  const monday = () => {
+    const audio = new Audio(press);
+    audio.play();
+    setCounter(counter + 1);
+    if (counter > 1){
+      navigate("/Monday");
+    }
+  };
   
    return (
 <>
@@ -55,7 +65,7 @@ function MainScreen() {
     <div className="Noflip-box-back">
       <div className="NoD3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClick}>
+          <button className="button" onClick={monday}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>

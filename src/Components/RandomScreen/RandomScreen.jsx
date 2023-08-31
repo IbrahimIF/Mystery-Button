@@ -150,7 +150,7 @@ function RandomScreen() {
   useEffect(() => {
     if (timeoutDuration !== null) {
       const timer = setTimeout(() => {
-        if (counter < 3){
+        if (counter = 2){
           navigate("/Fourth");
         }
         else{
@@ -176,7 +176,6 @@ return(
 <div className="media" onClick={refreshMedia}>
         {media}
       </div>
-      <p className="counter">can you see this {counter}</p>
     </div>
 );
 }
