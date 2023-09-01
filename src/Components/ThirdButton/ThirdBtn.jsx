@@ -6,30 +6,52 @@ import {useCounter} from '../../Components/CounterContext/CounterContext';
 
 function MainScreen() {
   const navigate = useNavigate();
-  const { incrementCounter } = useCounter();
   const [counter, setCounter] = useState(0);
+  const { totalCounter} = useCounter();
+  const { btnCounter1, incrementBtnCounter1, btnCounter2, incrementBtnCounter2, btnCounter3, incrementBtnCounter3, btnCounter4, incrementBtnCounter4 } = useCounter();
+  const { incrementCounter } = useCounter();
 
-  const handleButtonClick = () => {
+  const handleButtonClickOne = () => {
     const audio = new Audio(press);
     audio.play();
-
+    if (btnCounter1 < 1){
+      incrementBtnCounter1();
+    }
   };
 
-  const handleButtonOn = () => {
-    const audio = new Audio(press);
-    audio.play();
 
-    incrementCounter();
-    navigate("/Random");
-  };
-
-  const monday = () => {
+  const handleButtonClickTwo = () => {
     const audio = new Audio(press);
     audio.play();
     setCounter(counter + 1);
     if (counter > 1){
       navigate("/Monday");
     }
+    if (btnCounter2 < 1){
+      incrementBtnCounter2();
+    }
+  };
+
+  const handleButtonClickThree = () => {
+    const audio = new Audio(press);
+    audio.play();
+
+    if (btnCounter3 < 1){
+      incrementBtnCounter3();
+    }
+
+  };
+
+  const handleButtonClickFour = () => {
+    const audio = new Audio(press);
+    audio.play();
+
+    if (btnCounter4 < 1){
+      incrementBtnCounter4();
+    }
+
+    incrementCounter();
+    navigate("/Random");
   };
   
    return (
@@ -38,6 +60,22 @@ function MainScreen() {
     <source src={press} type="audio/mpeg"></source>
   </audio>
 
+  <div className="btnCounterbox"> 
+<div className="Noflip-box"> 
+    <div className="Noflip-box-front"></div>
+    <div className="Noflip-box-back">
+      <div className="NoD3animation">
+        <div className="baseButton">
+          <button className="button" onClick={handleButtonClickThree}>
+            <p className="text">Button</p>
+          </button>
+          <div className="buttonBellow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="btnCounter">{totalCounter}</div>
+</div>
 
 <div className="buttonContainer2">
 <div className="bellow"></div>
@@ -46,7 +84,7 @@ function MainScreen() {
     <div className="Noflip-box-back">
       <div className="NoD3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClick}>
+          <button className="button" onClick={handleButtonClickOne}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>
@@ -65,7 +103,7 @@ function MainScreen() {
     <div className="Noflip-box-back">
       <div className="NoD3animation">
         <div className="baseButton">
-          <button className="button" onClick={monday}>
+          <button className="button" onClick={handleButtonClickTwo}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>
@@ -82,7 +120,7 @@ function MainScreen() {
     <div className="flip-box-back">
       <div className="D3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonOn}>
+          <button className="button" onClick={handleButtonClickFour}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>

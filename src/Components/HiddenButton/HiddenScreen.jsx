@@ -1,13 +1,19 @@
 import "./HiddenScreen.css";
 import press from "../../assets/audio/Click - Sound Effect (HD).mp3"
 import { useNavigate } from 'react-router-dom';
+import {useCounter} from '../../Components/CounterContext/CounterContext';
 
 function MainScreen() {
   const navigate = useNavigate();
+  const { btnCounter6, incrementBtnCounter6} = useCounter();
 
-  const handleButtonClick = () => {
+  const handleButtonClickSix = () => {
     const audio = new Audio(press);
     audio.play();
+
+    if (btnCounter6 < 1){
+      incrementBtnCounter6();
+    }
 
     const timer = setTimeout(() => {
       navigate('/Fourth');
@@ -30,8 +36,8 @@ function MainScreen() {
     <div className="flip-box-back">
       <div className="D3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClick}>
-            <p className="text">Button</p>
+          <button className="button" onClick={handleButtonClickSix}>
+            <p className="text">Crazy?</p>
           </button>
           <div className="buttonBellow"></div>
         </div>

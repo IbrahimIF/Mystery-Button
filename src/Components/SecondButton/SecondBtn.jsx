@@ -2,27 +2,47 @@ import "./SecondBtn.css";
 import press from "../../assets/audio/Click - Sound Effect (HD).mp3"
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { useCounter } from '../CounterContext/CounterContext';
 
 function MainScreen() {
   const navigate = useNavigate();
   const [counter, setCounter] = useState(0);
+  const { totalCounter} = useCounter();
+  const { btnCounter1, incrementBtnCounter1, btnCounter2, incrementBtnCounter2, btnCounter3, incrementBtnCounter3 } = useCounter();
 
-  const handleButtonClick = () => {
+  const handleButtonClickOne = () => {
     const audio = new Audio(press);
     audio.play();
-
+    if (btnCounter1 < 1){
+      incrementBtnCounter1();
+    }
+    
   };
+  
 
-  const handleButtonOn = () => {
+  const handleButtonClickTwo = () => {
     const audio = new Audio(press);
     audio.play();
     setCounter(counter + 1);
-    if (counter > 3){
+    if (counter == 3){
       navigate("/Third");
     }
+    if (btnCounter2 < 1){
+      incrementBtnCounter2();
+    }
 
+  };
 
-  }
+  const handleButtonClickThree = () => {
+    const audio = new Audio(press);
+    audio.play();
+    if (btnCounter3 < 1){
+      incrementBtnCounter3();
+    }
+
+  };
+
+  
 
   
    return (
@@ -30,6 +50,23 @@ function MainScreen() {
   <audio id="myAudio">
     <source src={press} type="audio/mpeg"></source>
   </audio>
+
+  <div className="btnCounterbox"> 
+<div className="Noflip-box"> 
+    <div className="Noflip-box-front"></div>
+    <div className="Noflip-box-back">
+      <div className="NoD3animation">
+        <div className="baseButton">
+          <button className="button" onClick={handleButtonClickThree}>
+            <p className="text">Button</p>
+          </button>
+          <div className="buttonBellow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="btnCounter">{totalCounter}</div>
+</div>
 
 
 <div className="buttonContainer2">
@@ -39,7 +76,7 @@ function MainScreen() {
     <div className="Noflip-box-back">
       <div className="NoD3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClick}>
+          <button className="button" onClick={handleButtonClickOne}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>
@@ -58,7 +95,7 @@ function MainScreen() {
     <div className="flip-box-back">
       <div className="D3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonOn}>
+          <button className="button" onClick={handleButtonClickTwo}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>
