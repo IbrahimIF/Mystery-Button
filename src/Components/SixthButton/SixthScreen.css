@@ -1,0 +1,85 @@
+
+.buttonContainer7 {
+  position: relative;
+  left: 70%;
+  top: 25vh; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 95px;
+  width: 150px;
+  transition: 1s;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.buttonContainer8 {
+  position: relative;
+  left: 70%;
+  top: 35vh; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 95px;
+  width: 150px;
+  transition: 1s;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.buttonContainer9 {
+  position: relative;
+  left: 70%;
+  top: 45vh; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 95px;
+  width: 150px;
+  transition: 1s;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.buttonContainer10{
+  position: relative;
+  left: 30%;
+  top: 13vh; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 95px;
+  width: 150px;
+  transition: 1s;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+.Goat{
+  position: absolute;
+width: 58px;
+left: 25px;
+top: 0px;
+}
+
+.Cow{
+
+  position: absolute;
+  width: 58px;
+  left: 25px;
+  top: 0px;
+}
+
+.Pig{
+  position: absolute;
+  width: 68px;
+  left: 17px;
+  top: 0px;
+}
+

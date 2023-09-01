@@ -9,6 +9,8 @@ export const useCounter = () => useContext(CounterContext);
 // CounterContext component
 export function CounterProvider({ children }) {
   const [counter, setCounter] = useState(0);
+  const [counter2, setCounter2] = useState(0);
+
   const [totalCounter, setTotalCounter] = useState(0);
 
   const [btnCounter1, setbtnCounter1] = useState(0);
@@ -25,6 +27,10 @@ export function CounterProvider({ children }) {
 
   const incrementCounter = () => {
     setCounter(prevCounter => prevCounter + 1);
+  };
+
+  const incrementCounter2 = () => {
+    setCounter2(prevCounter2 => prevCounter2 + 1);
   };
  
 
@@ -53,16 +59,33 @@ export function CounterProvider({ children }) {
     setbtnCounter6( prevbtnCounter6 => prevbtnCounter6 + 1);
   };
 
+  const incrementBtnCounter7 = () => {
+    setbtnCounter7( prevbtnCounter7 => prevbtnCounter7 + 1);
+  };
+
+  const incrementBtnCounter8 = () => {
+    setbtnCounter8( prevbtnCounter8 => prevbtnCounter8 + 1);
+  };
+
+  const incrementBtnCounter9 = () => {
+    setbtnCounter9( prevbtnCounter9 => prevbtnCounter9 + 1);
+  };
+
+  const incrementBtnCounter10 = () => {
+    setbtnCounter10( prevbtnCounter10 => prevbtnCounter10 + 1);
+  };
+
   useEffect(() => {
-    const total = btnCounter1 + btnCounter2 + btnCounter3 + btnCounter4 + btnCounter5 + btnCounter6;
+    const total = btnCounter1 + btnCounter2 + btnCounter3 + btnCounter4 + btnCounter5 + btnCounter6 + btnCounter7 + btnCounter8 + btnCounter9 + btnCounter10;
 
     setTotalCounter(total);
-  }, [btnCounter1, btnCounter2, btnCounter3, btnCounter4, btnCounter5, btnCounter6]);
+  }, [btnCounter1, btnCounter2, btnCounter3, btnCounter4, btnCounter5, btnCounter6, btnCounter7, btnCounter8, btnCounter9, btnCounter10]);
 
 
   const resetCounter = () => {
     setCounter(0);
     setTotalCounter(0);
+    setCounter2(0);
 
     setbtnCounter1(0);
     setbtnCounter2(0);
@@ -78,8 +101,10 @@ export function CounterProvider({ children }) {
 
   const value = {
     counter,
-    totalCounter,
     incrementCounter,
+    counter2,
+    incrementCounter2,
+    totalCounter,
     resetCounter,
     btnCounter1,
     incrementBtnCounter1,
@@ -94,10 +119,13 @@ export function CounterProvider({ children }) {
     btnCounter6,
     incrementBtnCounter6,
     btnCounter7,
+    incrementBtnCounter7,
     btnCounter8,
+    incrementBtnCounter8,
     btnCounter9,
+    incrementBtnCounter9,
     btnCounter10,
-
+    incrementBtnCounter10,
   };
 
   return (

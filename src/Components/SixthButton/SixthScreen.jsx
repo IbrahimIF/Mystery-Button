@@ -1,35 +1,48 @@
-import "./FourthBtn.css";
+import "./SixthScreen.css";
 import press from "../../assets/audio/Click - Sound Effect (HD).mp3"
 import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
-import {useCounter} from '../../Components/CounterContext/CounterContext';
+import { useCounter } from '../CounterContext/CounterContext';
+import cow from '../../assets/Image/cow.png';
+import pig from '../../assets/Image/pig.jpeg';
+import goat from '../../assets/Image/goat.jpg';
+
+import GoatAudio from '../../assets/audio/Goat Scream - Sound Effect (HD).mp3';
+import CowAudio from '../../assets/audio/Minecraft cow sound effect.mp3';
+import PigAudio from '../../assets/audio/Pig.mp3';
 
 function MainScreen() {
   const navigate = useNavigate();
-  const { incrementCounter } = useCounter();
-  const { btnCounter1, incrementBtnCounter1, btnCounter2, incrementBtnCounter2, btnCounter3, incrementBtnCounter3, btnCounter4, incrementBtnCounter4, btnCounter5, incrementBtnCounter5 } = useCounter();
   const { totalCounter} = useCounter();
-  const [counter, setCounter] = useState(0);
+  const { incrementCounter2, Counter2} = useCounter();
+  const { btnCounter3, incrementBtnCounter3, btnCounter7, incrementBtnCounter7, btnCounter8, incrementBtnCounter8, btnCounter9, incrementBtnCounter9, btnCounter10, incrementBtnCounter10} = useCounter();
 
-  const handleButtonClickOne = () => {
-    const audio = new Audio(press);
+
+
+  const handleButtonClickSeven = () => {
+    const audio = new Audio(GoatAudio);
     audio.play();
-    if (btnCounter1 < 1){
-      incrementBtnCounter1();
+    if (btnCounter7 < 1){
+      incrementBtnCounter7();
     }
+    
   };
 
-
-  const handleButtonClickTwo = () => {
-    const audio = new Audio(press);
+  const handleButtonClickEight = () => {
+    const audio = new Audio(CowAudio);
     audio.play();
-    setCounter(counter + 1);
-    if (counter > 1){
-      navigate("/Monday");
+    if (btnCounter8 < 1){
+      incrementBtnCounter8();
     }
-    if (btnCounter2 < 1){
-      incrementBtnCounter2();
+
+  };
+
+  const handleButtonClickNine = () => {
+    const audio = new Audio(PigAudio);
+    audio.play();
+    if (btnCounter9 < 1){
+      incrementBtnCounter9();
     }
+
   };
 
   const handleButtonClickThree = () => {
@@ -42,37 +55,35 @@ function MainScreen() {
 
   };
 
-  const handleButtonClickFour = () => {
+  const handleButtonClickTen = () => {
     const audio = new Audio(press);
     audio.play();
 
-    if (btnCounter4 < 1){
-      incrementBtnCounter4();
+
+    if (btnCounter10 < 1){
+      incrementBtnCounter10();
     }
 
-    incrementCounter();
-    navigate("/Random");
-  };
-
-  const handleButtonClickFive = () => {
-    const audio = new Audio(press);
-    audio.play();
-
-    navigate("/Fifth");
-
-    if (btnCounter5 < 1){
-      incrementBtnCounter5();
-    }
+    navigate("/End");
 
   };
-  
+
    return (
 <>
   <audio id="myAudio">
     <source src={press} type="audio/mpeg"></source>
   </audio>
+  <audio id="myAudio2">
+    <source src={GoatAudio} type="audio/mpeg"></source>
+  </audio>
+  <audio id="myAudio3">
+    <source src={CowAudio} type="audio/mpeg"></source>
+  </audio>
+  <audio id="myAudio4">
+    <source src={PigAudio} type="audio/mpeg"></source>
+  </audio>
 
-<div className="btnCounterbox"> 
+  <div className="btnCounterbox"> 
 <div className="Noflip-box"> 
     <div className="Noflip-box-front"></div>
     <div className="Noflip-box-back">
@@ -89,15 +100,52 @@ function MainScreen() {
   <div className="btnCounter">{totalCounter}</div>
 </div>
 
-<div className="buttonContainer2">
+<div className="buttonContainer7">
 <div className="bellow"></div>
 <div className="Noflip-box">
     <div className="Noflip-box-front"></div>
     <div className="Noflip-box-back">
       <div className="NoD3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClickOne}>
-            <p className="text">Button</p>
+          <button className="button" onClick={handleButtonClickSeven}>
+            <p className="text">Goat</p>
+            <img src={goat} className="Goat" alt="goat" />
+          </button>
+          <div className="buttonBellow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="buttonContainer8">
+<div className="bellow"></div>
+<div className="Noflip-box">
+    <div className="Noflip-box-front"></div>
+    <div className="Noflip-box-back">
+      <div className="NoD3animation">
+        <div className="baseButton">
+          <button className="button" onClick={handleButtonClickEight}>
+            <p className="text">Cow</p>
+            <img src={cow} className="Cow" alt="cow" />
+          </button>
+          <div className="buttonBellow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="buttonContainer9">
+<div className="bellow"></div>
+<div className="Noflip-box">
+    <div className="Noflip-box-front"></div>
+    <div className="Noflip-box-back">
+      <div className="NoD3animation">
+        <div className="baseButton">
+          <button className="button" onClick={handleButtonClickNine}>
+            <p className="text">Pig</p>
+            <img src={pig} className="Pig" alt="pig" />
           </button>
           <div className="buttonBellow"></div>
         </div>
@@ -108,48 +156,14 @@ function MainScreen() {
 
 
 
-<div className="buttonContainer3">
-<div className="bellow"></div>
-<div className="Noflip-box">
-    <div className="Noflip-box-front"></div>
-    <div className="Noflip-box-back">
-      <div className="NoD3animation">
-        <div className="baseButton">
-          <button className="button" onClick={handleButtonClickTwo}>
-            <p className="text">Button</p>
-          </button>
-          <div className="buttonBellow"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="buttonContainer4">
-<div className="bellow"></div>
-<div className="Noflip-box">
-    <div className="Noflip-box-front"></div>
-    <div className="Noflip-box-back">
-      <div className="NoD3animation">
-        <div className="baseButton">
-          <button className="button" onClick={handleButtonClickFour}>
-            <p className="text">Button</p>
-          </button>
-          <div className="buttonBellow"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="buttonContainer5">
+<div className="buttonContainer10">
 <div className="bellow"></div>
 <div className="flip-box">
     <div className="flip-box-front"></div>
     <div className="flip-box-back">
       <div className="D3animation">
         <div className="baseButton">
-          <button className="button" onClick={handleButtonClickFive}>
+          <button className="button" onClick={handleButtonClickTen}>
             <p className="text">Button</p>
           </button>
           <div className="buttonBellow"></div>
@@ -158,6 +172,7 @@ function MainScreen() {
     </div>
   </div>
 </div>
+
 
 </>
   );

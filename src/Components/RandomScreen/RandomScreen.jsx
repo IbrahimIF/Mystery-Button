@@ -16,11 +16,6 @@ function RandomScreen() {
       const mediaList = [
               // Media list (images and videos)
               { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
-              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
-              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
-              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
-              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
-              { type: 'Image', url: 'https://i.postimg.cc/SxfQH7LT/Miles.jpg' },
 
               { type: 'ClashRoyale', url: 'https://i.postimg.cc/L4Ppr32t/clash-royale.gif' },
 
@@ -29,31 +24,25 @@ function RandomScreen() {
               { type: 'jackBlack', url: 'https://www.youtube.com/embed/ddWJatRxfz8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=50'},
 
               { type: 'EvenLongerVideo', url: 'https://www.youtube.com/embed/OnFYspZag28?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'EvenLongerVideo', url: 'https://www.youtube.com/embed/w56X_U9TZ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenLongerVideo', url: 'https://www.youtube.com/embed/w56X_U9TZ-s?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
               { type: 'LongerVideo', url: 'https://www.youtube.com/embed/fjCOot3CApc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/8Mk69SFfCrc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'LongerVideo', url: 'https://www.youtube.com/embed/eLliSjYVqp8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'LongerVideo', url: 'https://www.youtube.com/embed/vzcGtJ2TC3I?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'LongerVideo', url: 'https://www.youtube.com/embed/04u2ctimwss?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'LongerVideo', url: 'https://www.youtube.com/embed/gDul8BcdeNk?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
-              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/7QOaq1KuccM?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/I8B1f4aGFm8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/6oeMjXVSECU?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'NormalVideo', url: 'https://www.youtube.com/embed/RxW4EhTXBaI?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/BdAPj5snkwk?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/gPf1z3Itkuc?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=32&end=48'},
+              { type: 'NormalVideo', url: 'https://www.youtube.com/embed/T2O3fmnqGrM?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              
 
               { type: 'ShorterVideo', url: 'https://www.youtube.com/embed/WzEYq2o3GCQ?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'ShorterVideo', url: 'https://www.youtube.com/embed/IzV-EoGxtME?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
 
               { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/zOYJDdqDhR8?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/aq_UO_ttn-k?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
-              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/KBudxCO61w?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
+              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/iNXel1vG8Sw?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/aH56oeU5soo?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1'},
               { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/1iG_d0tgZEY?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=05'},
-              { type: 'EvenShorterVideo', url: 'https://www.youtube.com/embed/WHq_pVtvFso?autoplay=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=1&start=30&end=35'},
               // Add more images and YouTube links to the list
       ];
 

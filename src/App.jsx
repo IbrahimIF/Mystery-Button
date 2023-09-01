@@ -8,6 +8,9 @@ import Fourthbtn from'./Components/FourthButton/FourthBtn';
 import RandomScreen from './Components/RandomScreen/RandomScreen';
 import Hiddenbtn from './Components/HiddenButton/HiddenScreen';
 import Monday from './Components/MondayScreen/MondayScreen';
+import Fifthbtn from'./Components/FifthButton/FifthScreen';
+import Sixthbtn from'./Components/SixthButton/SixthScreen';
+import Endbtn from'./Components/EndScreen/EndButton';
 import { CounterProvider } from './Components/CounterContext/CounterContext';
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
   <Route path="/Hidden" element={<Hiddenbtn />} />
   <Route path="/Random" element={<RandomScreen />} />
   <Route path="/Monday" element={<Monday />} />
+  <Route path="/Fifth" element={<Fifthbtn />} />
+  <Route path="/Sixth" element={<Sixthbtn />} />
+  <Route path="/End" element={<Endbtn />} />
 </Routes>
     </CounterProvider>
     </BrowserRouter>
