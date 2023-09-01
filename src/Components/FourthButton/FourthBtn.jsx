@@ -9,6 +9,7 @@ function MainScreen() {
   const { incrementCounter } = useCounter();
   const { btnCounter1, incrementBtnCounter1, btnCounter2, incrementBtnCounter2, btnCounter3, incrementBtnCounter3, btnCounter4, incrementBtnCounter4, btnCounter5, incrementBtnCounter5 } = useCounter();
   const { totalCounter} = useCounter();
+  const [counter, setCounter] = useState(0);
 
   const handleButtonClickOne = () => {
     const audio = new Audio(press);
@@ -51,7 +52,7 @@ function MainScreen() {
 
     incrementCounter();
     navigate("/Random");
-  }
+  };
 
   const handleButtonClickFive = () => {
     const audio = new Audio(press);
@@ -61,7 +62,7 @@ function MainScreen() {
       incrementBtnCounter5();
     }
 
-  }
+  };
   
    return (
 <>
