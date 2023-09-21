@@ -1,3 +1,5 @@
+https://github.com/IbrahimIF/Mystery-Button/releases/latest
+
 # Mystery Button
 Welcome to the Mysterious Red Button Game repository! This interactive website game will surely keep you entertained with its random surprises. Your goal is to find and press 10 red buttons to successfully finish the game. Are you ready to embark on this mysterious adventure?
 
