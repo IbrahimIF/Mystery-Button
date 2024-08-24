@@ -1,10 +1,10 @@
-
-<a href="https://github.com/IbrahimIF/Mystery-Button/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/tag/IbrahimIF/Mystery-Button?color=19e2e2&label=latest&logo=github"></a>
-<p align=center>
-# <img src=https://www.customrp.xyz/assets/logo.png style="height:1em;"/> Mystery Button
-![App Screenshot](https://www.customrp.xyz/assets/screenshot.png)
-
-</p>
+<!--
+#<a href="https://github.com/IbrahimIF/Mystery-Button/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/tag/IbrahimIF/Mystery-Button?color=19e2e2&label=latest&logo=github"></a>
+#<p align=center>
+#<img src=https://www.customrp.xyz/assets/logo.png style="height:1em;"/> Mystery Button
+#![App Screenshot](https://www.customrp.xyz/assets/screenshot.png)
+#</p>
+-->
 
 # Mystery Button
 Welcome to the Mysterious Red Button Game repository! This interactive website game will surely keep you entertained with its random surprises. Your goal is to find and press 10 red buttons to successfully finish the game. Are you ready to embark on this mysterious adventure?
