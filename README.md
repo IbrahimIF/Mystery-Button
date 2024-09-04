@@ -1,44 +1,67 @@
-<!--
-#<a href="https://github.com/IbrahimIF/Mystery-Button/releases/latest"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/tag/IbrahimIF/Mystery-Button?color=19e2e2&label=latest&logo=github"></a>
-#<p align=center>
-#<img src=https://www.customrp.xyz/assets/logo.png style="height:1em;"/> Mystery Button
-#![App Screenshot](https://www.customrp.xyz/assets/screenshot.png)
-#</p>
--->
+![image](https://github.com/user-attachments/assets/ab6d8ed8-2d56-4360-b2b5-881b2a195ff9)
 
-# Mystery Button
-Welcome to the Mysterious Red Button Game repository! This interactive website game will surely keep you entertained with its random surprises. Your goal is to find and press 10 red buttons to successfully finish the game. Are you ready to embark on this mysterious adventure?
 
-A random button thats placed at the start that will generate a random youtube video or image from assortmants. 
-(secrets are also included within the project) The title is short for Mystery media mixer button.
+![Project Status](https://img.shields.io/badge/status-completed-brightgreen)
 
-## Introduction
-The Mysterious Red Button Game is built using a combination of technologies, including Tailwind CSS, basic CSS, JavaScript, and React with Vite. Vite is a fast and opinionated web development build tool that aims to provide an enjoyable development experience. It features lightning-fast cold server start, instant hot module replacement (HMR), and a highly optimized build process.
+![Static Badge](https://img.shields.io/badge/made_with-React_+_Vite-blue)
 
-**Play the game:**
-Explore the game by interacting with the mysterious red buttons. Discover the unexpected and enjoy the surprises that await!
+#### **Description:**
 
-## Getting Started
+An Interactive website game inspired by the website [Bored Button](https://www.boredbutton.com/).
+The aim for the user is to find and press all 10 red buttons to successfully finish the game.
+This project also includes secrets.
+
+-----
+
+## Getting started:
+
+To run this project locally, you'll need to have Node.js and npm installed on your computer. Once you have these installed, follow these steps:
+
 **1. Clone the repository:**
 ```
 > git clone <repository-url>
 ```
-**2. Install dependencies:**
+
+**2. Navigate to the project directory using the command line.**
+
+**3. Install dependencies:**
 ```
 > npm install
 ```
-**3. Start the development server:**
+
+**4. Start the Vite development server:**
 ```
 > npm run dev
 ```
-## Demo
-Check out the live version of the project on [Vercel](https://mystery-button.vercel.app/).
 
-## Contributing
-Contributions to the Mysterious Red Button Game are always welcome! If you find any bugs, have suggestions for new features, or want to improve the game in any way, please open an issue or submit a pull request.
+**5. Open your web browser and navigate to http://localhost:5173 (or the port shown in the terminal) to view the project.**
 
-## License
 
-The Mysterious Red Button Game is released under the MIT License. Feel free to use, modify, and distribute the game as per the terms of the license.
+----
+## Demo:
+Below is the project link, currently live on Vercel:
+
+[Red-Button](https://mystery-button.vercel.app/).
+
+----
+## Features:
+This project includes:
+- **Loading screen**: A complex loading screen design that lasts for around 3 seconds.
+- **Start menu**: A basic start menu.
+- **Red button**: A red button that takes you to another page of red buttons, some buttons may need to be pressed more then once.
+- **Automated youtube videos**: Playable automatic youtube videos that are randomised.
+- **Counter**: A counter to count how many buttons have been pressed.
+- **Secrets** : hidden features of the project.
+
+
+----
+## Technologies and Tools Utilised:
+
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,vite,vercel,vscode&perline=2)](https://skillicons.dev)
+
+---
+
+## Acknowledgment:
+- [Bored Button](https://www.boredbutton.com/)
 
 
